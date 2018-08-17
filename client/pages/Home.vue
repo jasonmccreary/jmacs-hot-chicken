@@ -8,6 +8,9 @@
           <div class="max-w-sm mx-auto">
               <div class="my-6" ref="card"></div>
               <button type="submit" name="purchase" class="w-full whitespace-no-wrap block bg-red hover:bg-red-darker text-white font-bold px-4 py-4 text-base uppercase tracking-wide rounded antialiased">Order Now</button>
+              <div class="text-center text-grey-darkest mt-4 text-sm">
+                <span class="font-bold text-grey-darkest">On the go?</span> Text <em>615-258-7109</em> to order</a>.
+              </div>
           </div>
       </form>
   </div>
