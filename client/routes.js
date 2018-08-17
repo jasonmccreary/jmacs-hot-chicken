@@ -1,3 +1,4 @@
 export default {
-  '/': 'home'
+  '/': 'home',
+  '/thank-you': 'thank-you'
 }
