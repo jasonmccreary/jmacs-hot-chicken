@@ -7,20 +7,52 @@
   <title>JMac's Hot Chicken - A SoutheastPHP Joint</title>
   <meta name="description" content="An application for ordering hot chicken to demonstrate building a modern PHP application.">
   <meta name="author" content="JMac">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo|Ubuntu:400,400i,700" rel="stylesheet">
+  <style type="text/css">
+    body {
+      background: #222 url('/wood.png') repeat;
+      color: #fff;
+      font-family: 'Ubuntu', sans-serif;
+    }
+
+    .font-brand {
+      font-family: 'Boogaloo', cursive;
+    }
+
+    .StripeElement {
+      background-color: white;
+      height: 40px;
+      padding: 10px 12px;
+      border-bottom: 1px solid #ccc;
+      transition: border-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .StripeElement--focus {
+      border-color: #333;
+    }
+
+    .StripeElement--invalid {
+      border-color: #fa755a;
+    }
+
+    .StripeElement--webkit-autofill {
+      background-color: #fefde5 !important;
+    }
+  </style>
 </head>
 <body>
-  <div>
-    <header>
-      <h1><span>🔥🐓</span>JMac's Hot Chicken</h1>
-      <p id="tagline">We sell the <em>whole bird</em> in just one flavor &mdash; <strong>mothercluckin' hot!</strong></p>
-    </header>
+  <div class="container max-w-lg mx-auto text-center">
+      <header class="mt-20 mb-20">
+        <h1 class="font-brand text-5xl text-red mb-12" style="font-size: 6rem;"><span class="block mb-4">🔥🐓</span>JMac's Hot Chicken</h1>
+        <p id="tagline" class="text-3xl leading-normal">We sell the <em class="underline">whole bird</em> in just one flavor &mdash; <strong class="block text-4xl">mothercluckin' hot!</strong></p>
+      </header>
 
     <main>
       <div id="app"></div>
     </main>
-    <footer>&copy; JMac &dash; look I'm on <a href="https://twitter.com/gondark">Twitter</a></footer>
+    <footer class="text-sm font-white my-8">&copy; JMac &dash; look I'm on <a href="https://twitter.com/gondark" class="text-white">Twitter</a></footer>
   </div>
-
   <script src="https://js.stripe.com/v3/"></script>
   <script src="/build.js"></script>
 </body>
