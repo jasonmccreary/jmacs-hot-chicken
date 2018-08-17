@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --content-base public/",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "php": "npm run build && php -S 127.0.0.1:8000 -t public"
   },
   "dependencies": {
     "vue": "^2.3.3"
